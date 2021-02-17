@@ -1,0 +1,49 @@
+// Ubuntu Font
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../assets/fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../assets/fonts/Ubuntu/Ubuntu-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../assets/fonts/Ubuntu/Ubuntu-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../assets/fonts/Ubuntu/Ubuntu-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+// Ubuntu Mono Font
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('../assets/fonts/UbuntuMono/UbuntuMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('../assets/fonts/UbuntuMono/UbuntuMono-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('../assets/fonts/UbuntuMono/UbuntuMono-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('../assets/fonts/UbuntuMono/UbuntuMono-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}

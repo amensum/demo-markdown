@@ -1,0 +1,86 @@
+$mkd-height: 100vh;
+$mkd-offset-vertical: 16px;
+$mkd-offset-horizontal: 32px;
+$mkd-header-height: 104px;
+$mkd-body-height: calc(#{$mkd-height} - #{$mkd-header-height});
+
+.mkd {
+  @extend .row;
+  @extend .no-offsets;
+  height: $mkd-height;
+  background-color: $background-color-1;
+  color: $font-color-primary;
+}
+
+.mkd .card {
+  @extend .h-100;
+  background-color: $background-color-2;
+  border-radius: .25rem;
+  border: $border-primary;
+}
+
+.mkd .card > .card-header {
+  border-bottom: $border-primary;
+}
+
+.mkd .card > .card-footer {
+  border-top: $border-primary;
+}
+
+.mkd .sidebar {
+  @extend .col-3;
+  @extend .col-lg-3;
+  @extend .no-offsets;
+  background-color: $background-color-2;
+  border-right: $border-primary;
+}
+
+.mkd .workarea {
+  @extend .col-9;
+  @extend .col-lg-9;
+  @extend .no-offsets;
+}
+
+.mkd .workarea > .header {
+  @extend .row;
+  @extend .no-offsets;
+  height: $mkd-header-height;
+  padding: $mkd-offset-vertical $mkd-offset-horizontal;
+  border-bottom: $border-primary;
+}
+
+.mkd .workarea > .header > .card {
+  @extend .col-12;
+  @extend .col-lg-9;
+  @extend .h-100;
+  @extend .no-offsets;
+}
+
+.mkd .workarea > .body {
+  @extend .row;
+  @extend .no-offsets;
+  height: $mkd-body-height;
+  padding: $mkd-offset-vertical $mkd-offset-horizontal;
+}
+
+.mkd .workarea > .body > .card {
+  @extend .col-12;
+  @extend .col-lg-9;
+  @extend .h-100;
+  @extend .no-offsets;
+}
+
+.mkd .workarea > .body > .card > .card-header {
+  @extend .font-monospace;
+  @extend .fs-6;
+}
+
+.mkd .workarea > .body > .card > .card-footer {
+  @extend .font-monospace;
+  @extend .fs-6;
+}
+
+.mkd .workarea > .body > .card > .card-body {
+  @extend .no-offsets;
+  overflow: scroll;
+}

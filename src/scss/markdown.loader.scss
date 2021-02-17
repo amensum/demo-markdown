@@ -1,0 +1,18 @@
+@import "markdown";
+
+.markdown-body {
+  font-family: $font-family-primary;
+  padding: 1rem;
+
+  h1 {
+    border-bottom: $border-primary;
+  }
+
+  h2 {
+    border-bottom: $border-primary;
+  }
+
+  pre {
+    background-color: $background-color-1;
+  }
+}
