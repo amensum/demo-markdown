@@ -1,4 +1,5 @@
 {
+  "license": "ISC",
   "scripts": {
     "build": "webpack --mode production --devtool source-map",
     "watch": "webpack --mode development --devtool eval --watch",
