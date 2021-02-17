@@ -1,5 +1,3 @@
-/* global log */
-
 import React, { useEffect } from 'react'
 import AceEditor from 'react-ace'
 import { connect } from 'react-redux'
@@ -11,13 +9,11 @@ import { useStats } from '../hooks'
 import 'ace-builds/src-noconflict/mode-markdown'
 import 'ace-builds/src-noconflict/theme-monokai'
 
-const PureEditor = ({ source, name, path, setFileSource, invokeFileTranslate }) => {
+export const PureEditor = ({ source, name, path, setFileSource, invokeFileTranslate }) => {
   const [symbols, lines, bytes] = useStats(source)
 
   // invoke file translate on component unmount
   useEffect(() => invokeFileTranslate, [])
-
-  log.primary('RENDER', 'Editor')
 
   return (
     <div className={'card'}>

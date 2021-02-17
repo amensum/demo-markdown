@@ -1,13 +1,9 @@
-/* global log */
-
 import React from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
-const PurePreview = ({ markdown, name, path }) => {
-  log.primary('RENDER', 'Preview')
-
+export const PurePreview = ({ markdown, name, path }) => {
   return (
     <div className={'card'}>
       <div className={'card-header'}>
