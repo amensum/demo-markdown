@@ -1,3 +1,5 @@
+/* global it, expect, beforeEach, afterEach */
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { act } from 'react-dom/test-utils'
