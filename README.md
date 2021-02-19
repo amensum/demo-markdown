@@ -14,9 +14,3 @@ $ yarn lint  # to run eslint
 $ yarn test  # to run jest
 $ yarn build # to build dist
 ```
-
-### Screenshots
-
-![downloads](public/screenshot-1.png)
-
-![downloads](public/screenshot-2.png)
