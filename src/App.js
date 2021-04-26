@@ -36,7 +36,7 @@ const PureApp = ({ setFile, invokeFileTranslate }) => {
   log.primary('RENDER', 'App')
 
   return (
-    <div className={'mkd'}>
+    <div className={'demo'}>
       <div className={'sidebar'}/>
       <div className={'workarea'}>
         <div className={'header'}>
