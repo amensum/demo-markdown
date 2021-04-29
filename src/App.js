@@ -7,6 +7,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { invokeFileTranslate, setFile } from './actions/markdown.actions'
 import PropTypes from 'prop-types'
+import { stringDecBase64 } from './utils/string'
 
 const PureApp = ({ setFile, invokeFileTranslate }) => {
   const [preview_mode, setPreviewMode] = useState(true)
@@ -21,7 +22,7 @@ const PureApp = ({ setFile, invokeFileTranslate }) => {
         setFile(id, {
           name: json.result.name,
           path: json.result.path,
-          source: atob(json.result.content)
+          source: stringDecBase64(json.result.content)
         })
 
         invokeFileTranslate(id)

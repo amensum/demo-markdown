@@ -1,11 +1,11 @@
 {
   "license": "ISC",
   "scripts": {
-    "build": "webpack --mode production --devtool source-map",
+    "start": "webpack serve --mode development --devtool eval",
     "watch": "webpack --mode development --devtool eval --watch",
-    "serve": "webpack serve --mode development --devtool eval",
     "lint": "eslint src",
-    "test": "jest src/tests"
+    "test": "jest src/tests",
+    "build": "webpack --mode production --devtool source-map"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",

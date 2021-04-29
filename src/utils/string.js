@@ -18,3 +18,21 @@ export const stringLinesCount = str => str.split(/\n/).length
  * @returns {*}
  */
 export const stringSymbolsCount = str => str.length
+
+/**
+ *
+ * @param str
+ * @returns {string}
+ */
+export const stringEncBase64 = str => window.btoa(
+  unescape(encodeURIComponent(str)),
+)
+
+/**
+ *
+ * @param str
+ * @returns {string}
+ */
+export const stringDecBase64 = str => decodeURIComponent(
+  escape(window.atob(str)),
+)
